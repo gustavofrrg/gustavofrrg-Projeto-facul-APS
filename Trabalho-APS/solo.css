@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #495345;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #3a4538;
+}
+
+h1.center {
+  color: white;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+nav a,
+.button {
+  background: #6a994e;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  display: inline-block;
+  font-weight: bold;
+}
+
+nav a:hover,
+.button:hover {
+  background: #58803a;
+  transform: translateY(-2px);
+}
+
+main {
+  flex: 1;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+main h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.content-card {
+  background: #3a4538;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: left;
+  border: 2px solid #6a994e;
+}
+
+.content-card h3 {
+  color: #6a994e;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.content-card ul {
+  padding-left: 20px;
+}
+
+.content-card li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.step-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.step-card {
+  background: #3a4538;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  border: 2px solid #6a994e;
+  transition: transform 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-card h4 {
+  color: #ffffff;
+  margin-top: 0;
+  border-bottom: 1px solid #6a994e;
+  padding-bottom: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.soil-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #6a994e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #3a4538;
+  color: #cccccc;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .step-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-card {
+    width: 80%;
+  }
+}
